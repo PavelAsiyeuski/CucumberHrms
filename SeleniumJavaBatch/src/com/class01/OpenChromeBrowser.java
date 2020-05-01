@@ -1,4 +1,4 @@
-package com.syntax.class01;
+package com.class01;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
