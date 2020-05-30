@@ -25,7 +25,7 @@ public class HW1 extends PageInitializer{
 		sendText(driver.findElement(By.id("firstName")), "John");
 		sendText(driver.findElement(By.id("lastName")),"Smith");
 		click(driver.findElement(By.id("chkLogin")));
-		sendText(driver.findElement(By.id("user_name")),"JohnSmith3 ");
+		sendText(driver.findElement(By.id("user_name")),"JohnSmith4");
 		sendText(driver.findElement(By.id("user_password")),"10293847Qazwsx!!");
 		sendText(driver.findElement(By.id("re_password")),"10293847Qazwsx!!");
 		

@@ -2,8 +2,8 @@ package com.utils;
 
 import com.pages.AddEmployeePageElements;
 import com.pages.DashBoardPageElements;
-import com.pages.PersonalDetailsPageElements;
 import com.pages.LoginPageElements;
+import com.pages.PersonalDetailsPageElements;
 
 public class PageInitializer extends CommonMethods{
 

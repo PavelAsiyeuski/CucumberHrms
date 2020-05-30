@@ -1,11 +1,16 @@
 package com.utils;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchFrameException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -162,6 +167,17 @@ public class CommonMethods extends BaseClass{
 	}
 	public static void scrollDown(int pixel) {
 		getJSObject().executeScript("window.scrollBy(0,-"+pixel+")");
+	}
+	
+	public static void takeScreenshot(String filename) {
+		TakesScreenshot ts=(TakesScreenshot)  driver;
+		File file = ts.getScreenshotAs(OutputType.FILE);
+		try {
+		FileUtils.copyFile(file,new File("screenshot/"+filename+".png"));
+		}catch (IOException ie) {
+			ie.printStackTrace();
+		}
+	
 	}
 	
 	public static void wait(int second) {

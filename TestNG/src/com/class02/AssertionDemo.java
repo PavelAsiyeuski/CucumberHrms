@@ -7,8 +7,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.pages.LoginPageElements;
 import com.utils.CommonMethods;
-import com.utils.LoginPageElements;
 
 public class AssertionDemo extends CommonMethods{
 

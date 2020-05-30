@@ -15,6 +15,7 @@ public class PersonalDetailsPageElements {
 	@FindBy (name="personal[optGender]")
 	public List <WebElement> genderRadio;
 	
+	
 	public PersonalDetailsPageElements() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}
